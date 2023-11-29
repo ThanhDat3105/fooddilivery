@@ -1,0 +1,109 @@
+@mixin card() {
+    margin-top: 30px;
+
+    .title {
+        margin-bottom: 30px;
+
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+    }
+
+    .list_card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+
+        .card_item {
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all .3s;
+
+            .card_top {
+                padding: 12px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .card_bottom {
+                padding: 12px;
+
+                h5 {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    margin: 12px 0;
+                    line-height: 24px;
+                }
+
+                .sell {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 12px;
+
+                    .price {
+                        font-weight: 600;
+                    }
+
+                    .card {
+                        position: relative;
+                        width: 28px;
+                        height: 28px;
+                        background-color: #191720;
+                        cursor: pointer;
+                        transition: all .3s;
+
+                        .card_shop {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: 23%;
+                            color: white;
+
+                        }
+
+                        &:hover {
+                            background-color: #572AF8;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 20px 70px 0px #1B0C5412;
+            }
+
+
+        }
+    }
+}
+
+@mixin card_mobile() {
+    .list_card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@mixin card_tablet() {
+    .list_card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@mixin card_ipad() {
+    .list_card {
+        gap: 15px;
+    }
+}

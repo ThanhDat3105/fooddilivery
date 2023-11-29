@@ -1,0 +1,37 @@
+.blog_body {
+    padding-bottom: 160px;
+
+    .content {
+        max-width: 770px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .text_header {
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        .content_same {
+            padding-top: 55px;
+
+            h4 {
+                padding: 30px 0 18px 0;
+                font-size: 26px;
+                line-height: 36px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .blog_body {
+        padding-bottom: 70px;
+    }
+}

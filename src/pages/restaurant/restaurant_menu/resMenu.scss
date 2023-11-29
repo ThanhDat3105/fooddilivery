@@ -1,0 +1,15 @@
+.res_menu {
+    display: flex;
+    gap: 25px;
+    border-top: 2px solid;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    padding-top: 30px;
+
+    p {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

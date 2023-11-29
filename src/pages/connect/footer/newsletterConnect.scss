@@ -1,0 +1,138 @@
+.newsletter {
+    background-color: #29B067;
+    height: 464px;
+
+    .container_newsletter {
+        position: relative;
+        height: 100%;
+
+        .newsletter_text {
+            width: 570px;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: 44px;
+                font-weight: 600;
+                line-height: 44px;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: white;
+                margin: 18px 0 38px 0;
+
+            }
+
+            .search_input {
+                display: flex;
+                width: 100%;
+
+                .form-control {
+                    width: 393px;
+                    height: 60px;
+                    margin-right: 20px;
+                }
+
+                .button_submit {
+                    width: 157px;
+                    height: 60px;
+                }
+            }
+        }
+
+        .intersect {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .burger {
+            position: absolute;
+            transform: translateY(-50%);
+            bottom: 50%;
+        }
+
+        .pizza {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .newsletter {
+        .container_newsletter {
+            .intersect {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .newsletter {
+        overflow: hidden;
+        width: 100%;
+        height: 435px;
+
+        .container_newsletter {
+            .intersect {
+                max-width: none;
+                transform: translateX(50%);
+                right: 50%;
+            }
+
+            .burger {
+                width: 0;
+                height: 0;
+            }
+
+            .pizza {
+                width: 0;
+                height: 0;
+            }
+
+            .newsletter_text {
+                max-width: 350px;
+
+                h2 {
+                    font-size: 34px;
+                    line-height: 34px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    margin: 12px 0 30px 0;
+                }
+
+                .search_input {
+                    flex-direction: column;
+                    height: 132px;
+
+                    .form-control {
+                        width: 100%;
+                    }
+
+                    .button_submit {
+                        width: 100%;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

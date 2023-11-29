@@ -1,0 +1,138 @@
+.modal_sale {
+    .modal-dialog {
+        .modal-content {
+            width: 500px;
+            height: 730px;
+            border-radius: 16px;
+
+            .modal-body {
+                padding: 0;
+
+                .sale {
+                    .img_sale {
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .title_sale {
+                        .title_top {
+                            padding-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            :nth-child(1) {
+                                color: #F05E36;
+                            }
+
+                            :nth-child(3) {
+                                color: #29B067;
+                            }
+
+                            h3 {
+                                font-weight: 700;
+                                font-size: 30px;
+                                line-height: 40px;
+                            }
+
+                            h1 {
+                                font-weight: 600;
+                                font-size: 65px;
+                                line-height: 60px;
+                                color: #191720;
+                            }
+
+                        }
+
+                        .title_bottom {
+                            .form_item {
+                                padding: 30px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+
+                                .item {
+                                    p {
+                                        margin-bottom: 5px;
+                                    }
+
+                                    .form-control {
+                                        width: 100%;
+                                        height: 56px;
+
+                                        &:focus {
+                                            box-shadow: none;
+                                        }
+
+                                    }
+
+                                    .button_submit {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .button_close {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: white;
+                        opacity: 1;
+                        border-radius: 10px;
+                        width: 40px;
+                        height: 40px;
+                        transition: all .3s;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                        &:hover {
+                            transition: all .3s;
+                            background-color: rgba(255, 255, 255, 0.751);
+                        }
+
+                        :nth-child(1) {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal_sale {
+        --bs-modal-width: 100%;
+        margin: 0;
+        height: 100%;
+
+        .modal-dialog {
+            .modal-content {
+                width: 600px;
+                height: 800px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .modal_sale {
+        .modal-dialog {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    }
+}

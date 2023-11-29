@@ -1,0 +1,103 @@
+@import "../../../styles/mixin.scss";
+
+.res_food {
+    h4 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    .res_category {
+        gap: 70px;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        overflow: auto;
+        margin: 30px 0;
+        height: 88px;
+        background-color: #FFFAE3;
+        align-items: center;
+
+        .name_category {
+            scroll-snap-align: start;
+            padding: 0 30px;
+
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .res_category::-webkit-scrollbar {
+        display: none;
+    }
+
+    .popular_menu {
+        @include card
+    }
+
+    .cheese_menu {
+        @include card
+    }
+
+    .chicken_menu {
+        @include card
+    }
+}
+
+@media (max-width: 1500px) {
+    .res_food {
+        .popular_menu {
+            @include card_ipad
+        }
+
+        .cheese_menu {
+            @include card_ipad
+        }
+
+        .chicken_menu {
+            @include card_ipad
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .res_food {
+        .res_category {
+            gap: 10px;
+        }
+
+        .popular_menu {
+            @include card_tablet
+        }
+
+        .cheese_menu {
+            @include card_tablet
+        }
+
+        .chicken_menu {
+            @include card_tablet
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .res_food {
+        .res_category {
+            gap: 10px;
+        }
+
+        .popular_menu {
+            @include card_mobile
+        }
+
+        .cheese_menu {
+            @include card_mobile
+        }
+
+        .chicken_menu {
+            @include card_mobile
+        }
+    }
+}

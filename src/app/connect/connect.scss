@@ -1,0 +1,23 @@
+.connect {
+    padding-top: 60px;
+}
+
+@media (max-width: 1024px) {
+    .connect.tablet {
+        .container_all {
+            max-width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .connect {
+        .container_all {
+            max-width: 340px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

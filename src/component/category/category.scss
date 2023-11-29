@@ -1,0 +1,14 @@
+.category_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+
+    .img_category {
+        border: 1px solid;
+        border-radius: 50%;
+        padding: 10px;
+        border-color: #FFFAE3;
+        background-color: #FFFAE3;
+    }
+}

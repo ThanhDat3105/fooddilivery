@@ -1,0 +1,102 @@
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.card_container {
+    .card_menu {
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 40px;
+        transition: all .3s ease;
+
+        .card_top {
+            img {
+                width: 100%;
+            }
+        }
+
+        .card_bottom {
+            margin-top: 12px;
+
+            .name {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .delivery {
+                margin: 8px 0 4px 0;
+            }
+
+            .timeAndType {
+                height: 48px;
+                display: flex;
+                width: 90%;
+                gap: 30px;
+
+
+                .time {
+
+                    :nth-child(2) {
+                        font-weight: 600;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .border_mid {
+                    border: 1px solid #575363;
+                    display: flex;
+                    height: 80%;
+                    margin-top: 3px;
+                }
+
+                .type {
+
+                    :nth-child(2) {
+                        font-weight: 600;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .rateAndAssessor {
+                display: flex;
+                margin-top: 5px;
+                gap: 8px;
+                align-items: center;
+
+                .rate {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .star_item {
+                    color: #FFCF54;
+                }
+
+                .assessor {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+
+        }
+
+        &:hover {
+            box-shadow: 0px 20px 70px 0px #1B0C5412;
+        }
+    }
+}

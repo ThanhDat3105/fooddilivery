@@ -1,0 +1,172 @@
+.contact {
+    padding-top: 115px;
+    padding-bottom: 160px;
+
+    .contact_top {
+        max-width: 570px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+
+        .title {
+            text-align: center;
+
+            h2 {
+                font-size: 44px;
+                line-height: 44px;
+                font-weight: 600;
+            }
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .contact_bottom {
+        padding-top: 55px;
+
+        .info {
+            .info_top {
+                display: flex;
+                gap: 30px;
+                padding-bottom: 30px;
+
+                .in4_left {
+                    width: 100%;
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: column;
+
+                    .input_top {
+                        input {
+                            width: 100%;
+                            border-radius: 6px;
+                            padding: 20px;
+                            border: 1px solid #191720;
+
+                            &:focus {
+                                border: 1px solid #191720;
+                            }
+                        }
+                    }
+
+                    .input_bottom {
+                        input {
+                            width: 100%;
+                            border-radius: 6px;
+                            padding: 20px;
+                            border: 1px solid #191720;
+
+                            &:focus {
+                                border: 1px solid #191720;
+                            }
+                        }
+                    }
+                }
+
+                .in4_right {
+                    width: 100%;
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: column;
+
+                    .input_top {
+                        input {
+                            width: 100%;
+                            border-radius: 6px;
+                            padding: 20px;
+                            border: 1px solid #191720;
+
+                            &:focus {
+                                border: 1px solid #191720;
+                            }
+                        }
+                    }
+
+                    .input_bottom {
+                        input {
+                            width: 100%;
+                            border-radius: 6px;
+                            padding: 20px;
+                            border: 1px solid #191720;
+
+                            &:focus {
+                                border: 1px solid #191720;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info_bottom {
+                textarea {
+                    border-radius: 6px;
+                    width: 100%;
+                    border: 1px solid #191720;
+
+                    &:focus {
+                        border: 1px solid #191720;
+                    }
+
+                    padding: 20px;
+                }
+            }
+
+            .button_send {
+                padding-top: 30px;
+                display: flex;
+                justify-content: end;
+
+                button {
+                    padding: 15px 35px;
+                    background-color: #572AF8;
+                    border-radius: 6px;
+                    color: white;
+                    border: none;
+                    transition: all .3s;
+
+                    &:hover {
+                        background-color: #3b12d2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .contact {
+        padding-top: 90px;
+        padding-bottom: 70px;
+
+        .contact_top {
+            .title {
+                h2 {
+                    font-size: 36px;
+                    line-height: 36px;
+                }
+            }
+        }
+
+        .contact_bottom {
+            .info {
+                .info_top {
+                    flex-direction: column;
+                    gap: 18px;
+
+                    .in4_left {
+                        gap: 18px;
+                    }
+
+                    .in4_right {
+                        gap: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

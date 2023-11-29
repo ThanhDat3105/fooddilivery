@@ -1,0 +1,128 @@
+.connect_about {
+    padding-top: 260px;
+    padding-bottom: 160px;
+    background-color: #FFFAE3;
+    position: relative;
+
+    .about_top {
+        h2 {
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 44px;
+            margin-bottom: 55px;
+            max-width: 470px;
+        }
+    }
+
+    .count_down {
+        color: #FFFFFF;
+        top: -50%;
+        right: 50%;
+        position: absolute;
+        transform: translate(50%, 152%);
+
+        .count_item {
+            padding: 55px 200px;
+            background: #191720;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 100px;
+
+            :nth-child(4) {
+                margin: 0 !important;
+            }
+
+            .item {
+                text-align: center;
+                width: 141px;
+                height: 92px;
+
+                h2 {
+                    font-size: 44px;
+                    line-height: 44px;
+                    padding-bottom: 18px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 30px;
+                }
+
+            }
+
+            .pizza_cut {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .leaf {
+                position: absolute;
+                right: 0;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .connect_about {
+        .count_down {
+            .count_item {
+                padding: 55px 153px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .connect_about {
+        padding-top: 200px;
+
+        .count_down {
+            transform: translate(50%, 205%);
+
+            .count_item {
+                gap: 20px;
+                padding: 35px 70px;
+
+                .item {
+                    width: 125px;
+
+                    h2 {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .connect_about {
+        padding-top: 20px;
+
+        .count_down {
+            transform: translate(50%, -52%);
+
+            .count_item {
+                grid-template-columns: auto;
+                gap: 20px;
+
+                .item {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
