@@ -1,0 +1,41 @@
+.not_found {
+  padding-top: 160px;
+  height: 100vh;
+
+  .content {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .text {
+      p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .button_back {
+      padding: 15px 35px;
+      border: none;
+      border-radius: 6px;
+      background-color: #572af8;
+      color: white;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #3b12d2;
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .not_found {
+    padding-top: 110px;
+  }
+}

@@ -1,14 +1,33 @@
 .category_item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-align: start;
+  gap: 6px;
+  cursor: pointer;
 
-    .img_category {
-        border: 1px solid;
-        border-radius: 50%;
-        padding: 10px;
-        border-color: #FFFAE3;
-        background-color: #FFFAE3;
+  .img_category {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    border-color: #fffae3;
+    background-color: #fffae3;
+
+    img {
+      max-width: none;
     }
+  }
+
+  .title_category {
+    transition: all 0.3s;
+
+    p {
+      line-height: 28px;
+      font-weight: 600;
+    }
+  }
+
+  &:hover .title_category {
+    color: #572af8;
+  }
 }

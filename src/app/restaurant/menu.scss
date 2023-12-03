@@ -1,0 +1,21 @@
+.menu {
+  padding-top: 115px;
+
+  .container_menu {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 428px) {
+  .menu {
+    padding-top: 20px;
+  }
+}
